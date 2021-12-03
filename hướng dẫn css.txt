@@ -1,0 +1,52 @@
+﻿background-color: var(--gutter-color);
+    grid-gap: var(--gutter-width);
+    grid-template-areas: "";
+    -ms-grid-columns: ;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    width: calc(100% - var(--double-edge-border-width) - var(--safe-area-inset-lt) - var(--safe-area-inset-rt));
+    left: calc(var(--edge-border-width) + var(--safe-area-inset-lt));
+    border-bottom: var(--gutter-width) solid var(--gutter-color);
+}=> dùng để chia sản phẩm
+
+Như đã nói ở trên giá trị này giúp căn chỉnh phần tử mà không gây ảnh hưởng đến các phần tử khác. Bình thường chúng ta dùng margin hay padding chắc chắn sẽ đẩy các phần tử khác ra một đoạn gây ảnh hưởng tới layout.
+Các bạn thấy chứ mình dùng position: relative cho phần tử image thế là nó nằm lên trên đoạn text luôn mà đoạn text không hề di chuyển. Nếu bình thường bạn không dùng position: relative mà bạn dùng margin hay padding sẽ ảnh hưởng ngay.
+
+h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: auto; /*change here*/
+  right: 0;/*change here*/
+  width: 0;
+  height: 100%;
+  background-color: #e74c3c;
+  transition: .25s;
+  z-index: -1;
+}
+h2:hover:before {
+  width: 100%;
+  left: 0;/*change here*/
+  right: auto;/*change here*/
+}
+-> animation
+.quote {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 30px;
+  position: relative;
+}
+.quote:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50px;
+  border-top: 10px solid #eee;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+-> tạo thành hình như v https://evondev.com/wp-content/uploads/2018/11/triangle-before.png
+
+    color: #86868b;
+    padding: 17px 0 11px;

@@ -1,0 +1,249 @@
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header-app-store{
+    display: inline-block;
+    list-style-type: none;
+    height: 44px;
+    margin: 0;
+}
+#nav{
+    text-align: center;
+    z-index:2;
+    position: fixed;
+    height: 44px;
+    background-color: #343434;
+    top: 0;
+    right: 0;
+    left: 0;
+    clear: both;
+}
+#header-app-store > li{   
+    display: inline-block;
+ }
+#header-app-store li{
+   position: relative;
+   padding: 0 33px;   
+}
+
+#header-app-store li a{
+    text-decoration: none;
+    line-height: 44px;
+    display: block;   
+    font-size: 14px;  
+    color: #e1dfde;
+    
+}
+#header-app-store li a:hover{
+    color: white;
+}
+#header-app-store li #icon-nav{
+    font-size: 20px;
+}
+article{
+    position: relative;
+    
+}
+#header-section{
+    
+    height: 44px;
+    background-color: #e1dfde ;
+    margin-top: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 14px;
+}
+#header-section #link-header-section{
+    text-decoration: none;
+   color: #06c;
+}
+#header-section #link-header-section:hover{
+    text-decoration: underline;
+}
+
+#img-section{
+    padding-bottom: 12px;
+    height: 650 px;
+    background-size: cover;
+    width: 100%;
+    max-height: 692px;
+    
+    display: inline-block;
+    position: relative ;
+    z-index: -1;
+    cursor: pointer;
+}
+#img-header-section
+{
+    cursor: pointer;
+    position: relative ;
+    height: 690px;
+    width: 100%;
+ display: inline-block;
+}
+#text-for-img-header-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    
+    padding-top: 61px;
+    text-align: center;
+}
+#text-for-img-header-section h2{
+   font-weight: 700;
+    line-height: 52px;
+   font-size: 48px;
+   margin:0px;
+   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#text-for-img-header-section h3{
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 38px;
+    font-size: 24px;
+    margin:0px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #343434; 
+}
+#informatin-items{
+   margin-top: 10px;
+     font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   
+}
+#informatin-items p{
+    line-height: 28px;
+    font-size: 16px;
+    margin:0;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   color:  #86868b;
+   letter-spacing: 1.2px;
+}
+#informatin-items a{
+    line-height: 50px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   color:  #06c;
+   text-decoration: none;
+   margin-left: 20px;
+   margin-right: 20px;
+   }
+   #informatin-items a:hover{
+    text-decoration: underline;
+    
+   }
+  #img-menu{
+  display: flex;
+   
+  position: relative ;
+  width: 98.7%;
+   padding: 0 12px 12px 12px;
+   justify-content: space-between;
+   flex-direction: none;
+   height: 570px;
+}
+  #img-menu #item #menu{
+    width: 100%; 
+    height: 570px;
+    display: inline-block;
+    position: relative ;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  #img-menu #item {
+    flex-basis: 49.6%;
+    
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 248.64px;
+    width: 100%;
+ display: inline-block;
+}
+#img-menu #item #text-for-item {
+    margin-top: 44px;
+  position: absolute ;
+  width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+#img-menu #item div h2{
+   font-weight: 700;
+   line-height: 46px;
+   font-size: 36px;
+   margin: 0;
+   margin-bottom:10px;
+   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#img-menu #item div h3{
+    font-weight: 300;
+    margin-top: 10px;
+   
+    font-size: 20px;
+    margin:0px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #343434; 
+}
+
+#img-menu #item div h4{
+    color: #98161f;
+     margin-top:-15px;
+     font-size: 14px;
+     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
+}
+#informatin-items-menu{
+    margin-top: 5px;
+      font-size: 20px;
+     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+     display: inline-block;
+   
+ }
+ #informatin-items-menu p{
+     line-height: 22px;
+     font-size: 16px;
+     margin:0;
+     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:  #86868b;
+    
+ }
+ #informatin-items-menu a{
+     line-height: 36px;
+     font-size: 16px;
+     position: relative;
+ 
+     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:  #06c;
+    text-decoration: none;
+    margin: 20px;
+    }
+    #informatin-items-menu a:hover{
+     text-decoration: underline;
+    }
+
+    #footer-apple{
+        margin: 0 auto;
+        max-width: 980px;
+        font-size: 12.8px;
+        letter-spacing: normal;
+  }
+  footer div ul li{
+      color : #86868b;
+  }
